@@ -1,15 +1,14 @@
-cat > index.html << 'EOL'
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Domestichelp App UI</title>
+  <title>domestichelp-app UI</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       margin: 0;
-      padding: 0;
+      padding: 2rem;
       background: #f9f9f9;
       color: #333;
       line-height: 1.6;
@@ -17,9 +16,8 @@ cat > index.html << 'EOL'
     .container {
       max-width: 960px;
       margin: auto;
-      padding: 2rem;
     }
-    h1 {
+    h1, h2 {
       color: #2c3e50;
     }
     iframe {
@@ -29,7 +27,7 @@ cat > index.html << 'EOL'
     }
     .video {
       position: relative;
-      padding-bottom: 56.25%;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
       height: 0;
       overflow: hidden;
     }
@@ -46,6 +44,9 @@ cat > index.html << 'EOL'
     a:hover {
       text-decoration: underline;
     }
+    ul {
+      padding-left: 1.5rem;
+    }
   </style>
 </head>
 <body>
@@ -54,12 +55,12 @@ cat > index.html << 'EOL'
     <p>A modern and intuitive user interface design for <strong>Domestichelp App</strong>, a platform designed to streamline domestic help management for users. Built using Figma.</p>
 
     <h2>🎨 UI Design (Figma)</h2>
-    <iframe src="https://www.figma.com/embed?embed_host=github&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FaQ61PLSqs3zbTIwMRTib6A%2Fclarissa-s-team-library%3Fnode-id%3D315-0%26t%3DjrG0p8MMZnvrxRqt-1" allowfullscreen></iframe>
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=github&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FaQ61PLSqs3zbTIwMRTib6A%2Fclarissa-s-team-library%3Fnode-id%3D315-0%26t%3DjrG0p8MMZnvrxRqt-1" allowfullscreen></iframe>
     <p><a href="https://www.figma.com/design/aQ61PLSqs3zbTIwMRTib6A/clarissa-s-team-library?node-id=315-0&t=jrG0p8MMZnvrxRqt-1" target="_blank">Open Figma File in New Tab</a></p>
 
     <h2>🎞️ App Demo Video</h2>
     <div class="video">
-      <iframe src="https://www.youtube.com/embed/py1WiQSCORQ" allowfullscreen></iframe>
+      <iframe width="800" height="450" src="https://www.youtube.com/embed/py1WiQSCORQ" allowfullscreen></iframe>
     </div>
     <p><a href="https://www.youtube.com/watch?v=py1WiQSCORQ" target="_blank">Watch on YouTube</a></p>
 
@@ -74,4 +75,3 @@ cat > index.html << 'EOL'
   </div>
 </body>
 </html>
-EOL
